@@ -8,7 +8,7 @@
             // 1. Greeting
             string name;
             int age, year, num1, num2, num3;
-            double dis1, dis2, dis3;
+            double dis1, dis2, dis3, leg1, leg2, hypLength;
             DateTime yearGetter = DateTime.Now;
             year = yearGetter.Year;
             Console.WriteLine("Hello, what is your name?");
@@ -55,6 +55,15 @@
 
 
             // 4. Hypotenuse
+            Console.WriteLine($"Hello. Having trouble finding the hypotenuse of a right triangle? Well that's what I'm here for!");
+            Console.WriteLine($"First, enter the length of the first leg of the triangle in cm:");
+            leg1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"So the length of the first leg is {leg1}cm? What's the length of the second leg, in cm again:");
+            leg2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"So the length of the first leg is {leg1}cm, and the length of the second is {leg2}cm.");
+            hypLength = Math.Round(Math.Sqrt((leg1 * leg1) + (leg2 * leg2)),2);
+            Console.WriteLine($"That means the length of the hyptoneuse is about {hypLength}cm.");
+
 
         }
     }
