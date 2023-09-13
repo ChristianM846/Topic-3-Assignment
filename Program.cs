@@ -49,6 +49,12 @@
             dis3 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine($"Your thrid and final distance is {dis3}Km. Please give me moment to calculate the avaerage between them. Press Enter to continue.");
             Console.WriteLine($"The average between the three distances is {Math.Round(((dis1 + dis2 + dis3)/3),2)}");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+
+            // 4. Hypotenuse
 
         }
     }
